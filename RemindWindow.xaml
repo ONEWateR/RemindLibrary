@@ -1,0 +1,38 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="RemindLibrary.RemindWindow" 
+        Title="" Height="275" Width="380"
+        Style="{DynamicResource CAOption}"
+        Loaded="Window_Loaded_1" Closing="Window_Closing_1" 
+        Opacity="0">
+
+    
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="CAImageButton.xaml" />
+                <ResourceDictionary Source="WindowStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
+    </Window.Resources>
+    
+    <Grid>
+        <StackPanel>
+            
+            <Grid>
+                <Label x:Name="content"  Content="Label" HorizontalAlignment="Left" Margin="90,5,0,0" VerticalAlignment="Top" Height="auto" Width="255"  Foreground="#FF333333" MinHeight="38" />
+            </Grid>
+            <Grid Margin="0,12,0,0">
+                <StackPanel x:Name="opsGrid" HorizontalAlignment="Left" Height="auto" VerticalAlignment="Top" Width="380"/>
+            </Grid>
+        </StackPanel>
+        <Label x:Name="title" Content="Label" HorizontalAlignment="Left" Margin="90,-27,0,0" VerticalAlignment="Top" FontSize="14" Height="auto"/>
+        <Image x:Name="icon" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="80" Margin="0,-30,0,0"/>
+
+    </Grid>
+
+
+    
+  
+</Window>
