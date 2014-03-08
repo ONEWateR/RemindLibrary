@@ -30,7 +30,7 @@ WPF写的提醒窗口类库。
     公共 | ClickEvent  | MouseButtonEventHandler。点击选项按钮触发的事件。
     
 
-### RemindIcon 委托
+### RemindIcon 枚举
   * | 名称 | 说明
     ------------ | ------------- | ------------
     公共 | DefaultIcon  | 默认图标。
@@ -85,3 +85,9 @@ WPF写的提醒窗口类库。
             RemindWindow.Show(textBox1.Text, richTextBox1.Text, me);
             
 建议使用 pack://siteoforigin:,,,/ 格式。其次图片应该复制到输出路径，不然是找不到的 = =。当然也可以使用第一个的绝对路径。任何相对路径无效。
+
+4、使用参考资料
+-----------------------------------
+[Pack Url] (http://msdn.microsoft.com/zh-cn/library/aa970069.aspx)
+
+[Lambda 表达式](http://msdn.microsoft.com/zh-cn/library/bb397687.aspx)
